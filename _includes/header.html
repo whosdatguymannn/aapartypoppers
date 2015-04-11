@@ -1,0 +1,23 @@
+<header id="Header">
+	<div class="container clearfix">
+		<a href="{{ "/" | prepend: site.baseurl }}" id="Logo"><h1>A&amp;A Party Poppers</h1></a>
+		<nav id="MainNavOuter">
+			<ul id="MainNav">
+				{% for member in site.data.default.menu %}
+					<li {% if member.id == page.id %} class="current_page_item" {% endif %}>
+						<a href="{{  member.url | prepend: site.baseurl }}">{{ member.name }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		
+		<nav id="SocialMedia">
+			<ul class="clearfix">
+				{% for member in site.data.default.socialMedia %}
+					<li><a href="{{ member.url }}" target="_blank" class="{{ member.className }}"></a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+</header>
+

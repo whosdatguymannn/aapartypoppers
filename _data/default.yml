@@ -1,0 +1,79 @@
+# Default settings
+title: Events and Wedding Venue Decorators in London | A&amp;A Party Poppers
+email: 'aaparty@mymail.com'
+description: "A&amp;A Party Poppers is a team of events and wedding venue decorations specialists based in London UK. We offer a wide range of services including: chair and table covers, centrepieces, backdrops, balloon decorations, costumes, kids' entertainment and much more."
+
+#Navigation
+menu:
+  - {name: Home, id: home, url: '/'}
+  - {name: Gallery, id: gallery, url: '/gallery/#Gallery'}
+  - {name: About us, id: aboutUs, url: '/#AboutUs'}
+  - {name: Testimonials, id: testimonials, url: '/testimonials'}
+  - {name: Contact us, id: contact, url: '/contact'}      
+
+socialMedia:
+  - name: Facebook 
+    className: 'icon-facebook'
+    url: 'https://www.facebook.com/aapartypoppers'
+  
+  
+footerNav:
+  - {name: Home, url: '/'}
+  - {name: Contact us, url: '/contact'}
+  - {name: Facebook, url: 'https://www.facebook.com/aapartypoppers'}
+  
+#Slideshow images 
+image:
+  - {url: image1}
+  - {url: image2}
+  - {url: image5}
+
+#Home Page Sections
+homepage:
+  - id: HomepageWeddings 
+    sectionType: main
+    heading: Weddings 
+    url: '/gallery/#Gallery'
+    bgurl: wedding
+    link: View Gallery
+    blurb: <p>We design wedding decors that capture the imagination. Our range of decorations include everything from chair covers, to table centrepieces, head table arrangements, drape backdrops and lights. Our team of decorators will work with you to create your perfect decor.</p>
+
+  - id: HomepageParties 
+    sectionType: alternate   
+    heading: Parties &amp; Celebrations
+    url: '/gallery/#Gallery'
+    bgurl: hotel
+    link: View Gallery
+    blurb: <p>Our party decorations are designed to provide the perfect backdrop for your birthday, office convention or award ceremony. Create a classy look with our range of sophisticated chair covers, table pieces and entrance decorations.</p>
+
+  - id: HomepageKids 
+    sectionType: main
+    heading: Kids 
+    url: '/gallery/#Gallery'
+    bgurl: kids
+    link: View Gallery
+    blurb: <p>Create the perfect ‘Kids Party’ for your child with our range of themed decorations based around your child’s favourite character. We have all the essentials for a great party including costumes, cake accessories, party bags and fun-filled games that all your child’s friends would enjoy.</p>
+
+  - id: AboutUs 
+    sectionType: alternate   
+    heading: About Us
+    url: '/contact'
+    bgurl: about
+    link: Make an enquiry
+    blurb: <p>A&amp;A Party Poppers are a team of events and wedding venue decorations specialists based in London. We pride ourselves on our ability to transform any venue decor into something truly magical. Our energetic team of decorators put all their experience, passion and love into every venue they decorate, large or small.</p> 
+
+  - id: HomepageTestimonials 
+    sectionType: main
+    heading: Testimonials 
+    url: '/testimonials'
+    bgurl: testimonial
+    link: Read More
+    blurb: <p>These ladies are very professional, have great time management & are able to work under pressure. I loved how they understood my vision and had the venue looking amazing for my launch party. Keep up the good work, I will definitely be using your services again.</p> <em> - Khadijah Sesay </em>
+
+  - id: HomepageContact 
+    sectionType: alternate   
+    heading: Contact Us
+    url: '/contact'
+    bgurl: contact
+    link: Make an enquiry
+    blurb: ''

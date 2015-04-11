@@ -1,0 +1,37 @@
+/* CONTAC PAGE ******************************/
+
+#ContactWrapper {
+	min-height: 100%;
+	padding: 20px;
+	background-color: $bg-color;
+	text-align: left;
+}
+
+#ContactInnerWrap {
+	max-width: 400px;
+	//background: red;
+}
+
+#ContactInnerWrap input, #ContactInnerWrap textarea {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid $text-color;
+	margin: 10px auto;
+	font-size: 1em;
+	line-height: 1;
+	color: $text-color;
+	
+}
+
+#ContactInnerWrap input:focus, #ContactInnerWrap textarea:focus {
+	outline: none;
+}
+
+#ContactInnerWrap [type=submit] {
+	text-transform: uppercase;
+	background: none;
+	width: 55px;
+	float: right;
+	margin-top: 0;
+}

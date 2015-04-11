@@ -1,0 +1,46 @@
+---
+layout: default
+title: Gallery
+id: gallery
+---
+
+<section id="Gallery" class="gallery-sec">
+	<h3 id="">Gallery</h3>
+	
+	<div id="GalleryWrapper">
+		<ul>
+			{% for member in site.data.gallerySettings.gallery %}
+				<li> 
+					<div class="gallery-unit">
+						<div class="gallery-img-wrap" gallery="{{ member.imgurl }}">
+							<img src="../assets/img/gallery/{{ member.imgurl }}/thumbnail.jpg" width="200" height="200" alt="" />
+						</div>
+						<a href="http://" gallery="{{ member.imgurl }}">{{ member.title }}</a>
+					</div>
+				</li> 
+			{% endfor %}	
+		</ul>
+	</div>
+	
+	<div id="ImageCarouselWrap">
+		<span class="close-button">Close</span>
+		<ul id="Carousel">
+			{% for member in site.data.gallerySettings.gallery %}
+				<li gallery="{{ member.imgurl }}">
+					<div class="flexslider">
+					  <ul class="slides">
+					  	{% for image in member.images  %}
+						    <li>
+						      <img src="../assets/img/gallery/{{ member.imgurl }}/{{ image }}.jpg" />
+						    </li>
+						  {% endfor  %} 
+					  </ul>
+					</div>
+				</li>
+			{% endfor %}	
+		</ul>
+	</div>
+	
+</section>
+
+

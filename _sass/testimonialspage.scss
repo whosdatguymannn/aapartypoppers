@@ -1,0 +1,37 @@
+/* TESTIMONIALS PAGE ******************************/
+
+#Testimonials {
+	background-color: $bg-color;	
+}
+
+#TestimonialsWrap {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+#TestimonialsWrap ul {
+	list-style: none;
+}
+
+.testimonials-content {
+	padding: 20px 20px 0;
+}
+
+#TestimonialsWrap > ul li:first-child .testimonials-inner {
+	border-top: 1px solid $text-color;
+	padding-top: 20px;
+}
+
+
+.testimonials-inner {
+	border-bottom: 1px solid $text-color;
+	padding-bottom: 20px;
+}
+
+.testimonials-inner p {
+	margin-bottom: 10px;	
+}
+

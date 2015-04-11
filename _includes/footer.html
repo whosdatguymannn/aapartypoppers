@@ -1,0 +1,15 @@
+<footer id="Footer">
+	<div id="FooterInner">
+		<a href="{{ "/" | prepend: site.baseurl }}" class="footer_logo">A&amp;A Party Poppers</a>
+		<p>&copy; 2015</p>
+		<ul id="FooterNav">
+			{% for member in site.data.default.footerNav %}
+				<li><a href="{{ member.url }}">{{ member.name }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</footer>
+
+
+
+

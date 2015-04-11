@@ -1,0 +1,96 @@
+/* HEADER *****************************/
+
+#Header .container {
+	padding: 35px 0 0 0;
+	position: relative;
+	background-image: none;
+	background-color: $bg-color;
+}
+
+#Header #Logo {
+	display: block;
+	width: 363px;
+	height: 38px;
+	background: url('../img/logo.svg') no-repeat left top;	
+	background-size: 100% 100%;
+	margin: 0px auto;
+	text-indent: -9999px;
+}
+
+#Header #MainNavOuter { 
+	margin-top: 23px;
+	font-family: 'FontBodyMedium','FontBodyFallBack',sans-serif;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#Header #MainNav {
+	list-style: none;
+}
+
+#Header #MainNav > li {
+	display: inline-block;
+	*display: inline;
+	*zoom:	1;
+	//margin: 0 20px; 
+}
+
+#Header #MainNav > li > a {
+	display: inline-block;
+	color: $text-color;	
+	padding: 5px 20px 10px 20px;
+	border-bottom: 1px solid $bg-color;
+}
+
+#Header #MainNav > li.current_page_item > a, 
+#Header #MainNav > li.current_page_item > a:hover {
+	color: $accent-text-color;
+}
+
+#Header #MainNav > li > a:hover, 
+#Header #MainNav > li:hover > a { 
+	color: $accent-text-color;
+	border-bottom: 1px solid $accent-text-color;
+}
+
+#Header #SocialMedia {
+	position: absolute;
+	z-index: 10;
+	right: 0;
+	top: 0;
+	margin: 35px 3.5% 0 0;
+}
+
+#Header #SocialMedia ul {
+	list-style: none;
+	font-size: 1.5em;
+}
+
+#Header #SocialMedia ul li {
+	float: left;
+	margin-left: 10px;
+	display: block;
+}
+
+#Header #SocialMedia ul li a {
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+	display: inline-block;
+	background: #BB9E6A;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#Header #SocialMedia ul li a:hover { 
+	background-color: $text-color;
+}
+

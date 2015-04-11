@@ -1,0 +1,55 @@
+---
+layout: default
+id: home
+---
+
+<section id="HomepageSlideshowOuter" style="min-height: 1px;">
+	<section id="HomepageSlideshow" class="">
+		<div class="flexslider">
+		  <ul class="slides">
+		  	{% for member in site.data.default.image %}
+			    <li>
+			      <img src="assets/img/slides/{{ member.url }}.jpg" />
+			    </li> 
+		    {% endfor %}
+		  </ul>
+		</div>
+	</section>	
+</section>
+
+{% for member in site.data.default.homepage %}
+	<div id="{{ member.id }}" class="section">
+		<div class="section-inner">
+			<div class="section-row">
+			{% if member.sectionType == 'main' %}
+				<div class="section-blurb-cell">
+					<div class="blurb-wrap">
+						<h3>{{ member.heading }}</h3>
+						<div class="blurb">{{ member.blurb }}</div>
+						<a href="{{ member.url | prepend: site.baseurl }}">{{ member.link }}</a>
+					</div>
+				</div>
+				<div class="section-img-cell">
+					<div class="section-img-wrap">
+						<div><!-- Leave empty --></div>
+					</div>
+				</div>
+			{% else %}	
+				<div class="section-img-cell">
+					<div class="section-img-wrap">
+						<div class="alternate-section"><!-- Leave empty --></div>
+					</div>
+				</div>
+				<div class="section-blurb-cell">
+					<div class="blurb-wrap">
+						<h3>{{ member.heading }}</h3>
+						<div class="blurb">{{ member.blurb }}</div>
+						<a href="{{ member.url | prepend: site.baseurl }}">{{ member.link }}</a>
+					</div>
+				</div>
+			{% endif %}	
+			</div>
+		</div>
+	</div>
+{% endfor %}
+

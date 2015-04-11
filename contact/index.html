@@ -1,0 +1,20 @@
+---
+layout: default
+title: Contact Us
+id: contact
+---
+
+<div id="ContactWrapper">
+	<div id="ContactInnerWrap">
+		<span class="">Emial: {{ site.data.default.email }}</span>
+		<form method="post" action="//formspree.io/you@email.com" class="clearfix">
+	    <input type="text" name="name" placeholder="Name*">
+	    <input type="email" name="_replyto" placeholder="Email*">
+	    <input type="text" name="subject" placeholder="Subject"> 
+	    <textarea name="message" placeholder="Message*" rows="12"></textarea>
+	    <input type="submit" value="Send">
+		</form>
+	</div>
+</div>
+
+

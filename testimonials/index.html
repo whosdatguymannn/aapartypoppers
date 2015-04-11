@@ -1,0 +1,29 @@
+---
+layout: default
+title: Testimonials
+id: testimonials
+---
+
+<section id="Testimonials">
+	<h3 id="">Testimonials</h3>
+	
+	<div id="TestimonialsWrap">
+		<ul>
+			{% for quotes in site.data.testimonialsSettings.testimonials %}
+			<li>
+				<div class="testimonials-content">
+					<div class="testimonials-inner">
+						<p>“{{ quotes.quote }}”</p>
+						<em>&ndash; {{ quotes.name }}</em>
+					</div>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	
+	
+	
+</section>
+
+

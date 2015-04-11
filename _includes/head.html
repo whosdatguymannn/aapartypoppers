@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{% if site.data.default.description %}{{ site.data.default.description }}{% endif %}">
+	
+  <title>{% if page.title %}{{ page.title | append: ' | A&amp;A Party Poppers'}}{% else %}{{ site.data.default.title }}{% endif %}</title>
+  
+
+  
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/flexslider.css" | prepend: site.baseurl }}" type="text/css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.touchSwipe.min.js"></script>
+  <script src="{{ "/assets/js/jquery.flexslider.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/js/init.js" | prepend: site.baseurl }}"></script>
+</head>
+

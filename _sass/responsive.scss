@@ -1,0 +1,153 @@
+/* RESPONSIVE STUFF: 980 / 1000px grid ********************************************************************/ 
+
+@media screen and (max-width: 940px) {
+	.gallery-sec-cell {
+		width: 33.33%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#Header #Logo { 
+			width: 263px;
+	}
+	
+	#Header #MainNav > li {
+			display: block;
+	}
+	
+	#Header #MainNav > li > a {
+		display: block;
+		padding: 20px 0;
+		border: none;
+	}
+	
+	#Header #MainNav > li > a:hover, 
+	#Header #MainNav > li:hover > a { 
+			border: none;		
+	}
+	
+	#Footer #FooterInner {
+		padding-top: 10px;	
+	}
+	
+	#Footer .footer_logo, #Footer p {
+		display: none;
+	}
+	
+	#Footer #FooterNav {
+		float: none;
+		margin-top: 0;
+	}
+	
+	#Footer #FooterNav > li {
+		display: block;
+		clear: both;
+		margin: 0;
+	}
+	
+	#Footer #FooterNav > li a {
+		display: block;
+		padding: 10px 0;
+		margin: 10px 0;
+		text-align: center;
+	}
+	
+	.section-blurb-cell {
+		display: block;
+		width: 100%;
+	}
+	
+	.blurb-wrap h3 {
+		margin-top:  30px;
+	}
+	
+	.section-img-cell {
+		display: none;
+	}
+	
+	@each $i, $j in ($homepage-section-bg-img) {
+		#{$i} .section-inner:after {
+			content: '';
+			display: block;
+			height: 300px;
+			margin: 0px auto;
+			background: url(../img/#{$j}.jpg) no-repeat center center;
+		}
+	}
+	
+	#HomepageContact .section-inner:after {
+		content: '';
+		background: none;
+		max-height: 0;
+	}
+	
+	#HomepageParties .blurb-wrap {
+		text-align: center;
+		padding-left: 10px;
+	}
+	
+	#AboutUs .section-blurb-cell {
+		width: 100%;
+	}
+	
+	#AboutUs .blurb-wrap {
+		text-align: center;
+		padding-right: 10px;
+	}
+	
+	.gallery-sec-cell {
+		width: 50%;
+	}
+	
+	#Carousel > li {
+		height: auto;
+	}
+	
+	.carousel-blurb-wrap, .carousel-img-wrap {
+		float: none;
+	}
+	
+	.carousel-img-wrap, .carousel-blurb-wrap {
+		width: 100%;
+	}
+	
+	#Carousel {
+		height: auto;
+	}
+	
+	.carousel-img-wrap {
+		height: 400px;
+	}
+	
+	.carousel-prev-img, .carousel-next-img {
+		top: 195px;		
+	}
+	
+	.carousel-prev-img {
+		left: 5%;	
+	}
+	
+	.carousel-next-img {
+		right: 5%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#Header #SocialMedia {
+		position: relative;
+		margin: 25px auto;
+		text-align: center;
+	}
+	
+	#Header #SocialMedia ul {
+		display: inline-block;
+	}
+	
+	#Header #SocialMedia ul li {
+		margin: 0 20px;
+	}
+	
+	.gallery-sec-cell {
+		width: 100%;
+	}
+}
