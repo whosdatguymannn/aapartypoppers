@@ -26,7 +26,10 @@ footerNav:
 image:
   - {url: image1}
   - {url: image2}
+  - {url: image3}
+  - {url: image4}
   - {url: image5}
+  - {url: image6}
 
 #Home Page Sections
 homepage:
