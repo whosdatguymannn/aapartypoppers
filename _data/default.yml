@@ -22,7 +22,7 @@ footerNav:
   - {name: Contact us, url: '/contact'}
   - {name: Facebook, url: 'https://www.facebook.com/aapartypoppers'}
   
-#Slideshow images 
+#Slideshow images 12 by 8
 image:
   - {url: image1}
   - {url: image2}
